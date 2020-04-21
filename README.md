@@ -5,6 +5,9 @@ A nonsense online Petition!
 Users can register, login, create and change their profile data, 
 sign the petition on a Canvas field, delete the signature, logout, delete Account, see other supporters. 
 
+## DEMO
+![](petition.gif)
+
 ## Tech Stack:
 - node.js
 - Express.js
