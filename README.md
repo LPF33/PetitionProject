@@ -1,5 +1,5 @@
 # Online Petition Project
-A nonsense online Petition! --> No iron!
+A nonsense online Petition! 
 
 ## No ironing anymore! Let the "Mainzelmännchen" do it!
 Users can register, login, create and change their profile data, 
