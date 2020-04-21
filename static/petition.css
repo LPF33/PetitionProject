@@ -1,0 +1,236 @@
+:root {
+    --color-yellow: rgb(255, 255, 62);
+    --color-background: rgb(228, 59, 59);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+body {
+    background-color: var(--color-background);    
+}
+
+h1 {
+    font-size: 5.5vw;
+    color: white;
+    text-align: center;
+}
+
+main {
+    width: 100vw;
+}
+
+h2 {
+    font-size: 3vw;
+    color: var(--color-yellow);
+    text-align: center;
+}
+
+h3 {
+    font-size: 2vw;
+    text-align: center;    
+}
+
+#mainIMG {
+    position: absolute;
+    bottom: 10vh;
+    left: 10vh;
+    border: 1.5vw dashed white;
+    width: 35vh;
+}
+
+#register {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerDiv {
+    margin-top: 1.5vw;
+    display: flex;
+}
+
+#noinput {
+    color: black;
+    margin-top: 5px;
+}
+
+#loginLink {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 7vw;
+    font-size: 1.5vw;
+    text-align: center;
+    background-color: var(--color-yellow);
+    border-radius: 0.3vw;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+#register label{
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.registerInput {
+    display: block;
+    font-size: 1.1vw;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-yellow);
+    margin: 10px 10px 0 0;
+    color: white;
+    text-align: center;
+}
+
+#register [type="submit"]{
+    width: 20vw;
+    font-size: 2.4vw;
+    background-color: var(--color-yellow);
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px white;
+}
+
+#nosign {
+    text-shadow: -10px -10px 10px black ;
+}
+
+#loginIMG {
+    width: 10vw;
+    position: relative;
+    left: calc(50% - 5vw);
+}
+
+#signPetition {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#signPetition label{
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+}
+
+#signature {
+    margin-top: 10px;
+    font-size: 1.1vw;
+    border: 2px solid var(--color-yellow);
+    cursor: crosshair;
+}
+
+#signPetition [type="submit"]{
+    width: 12vw;
+    height: 12vh;
+    background-image: url("/images/scream.jpg");
+    background-size: 4vw;
+    font-size: 2.4vw;
+    color: white;
+    border: 3px dashed white;
+    margin-top: 10px;
+}
+
+#thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#signIMG {
+    text-align: center;
+}
+
+#signIMG img {
+    margin-top: 10px;
+    width: 15vw;
+}
+
+#thanksIMG {
+    width: 17vw;
+}
+
+#unsign p {
+    display: inline-block;
+    font-size: 1.3vw;
+}
+
+#unsign [type=submit]{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 0.9vw;    
+    border-radius: 0.3vw;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+a {
+    color: black;
+    font-size: 1.5vw;
+}
+
+#signers {
+    display: flex;
+    align-items: baseline;
+}
+
+.signA {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.time {
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+#edit {
+    position: absolute;
+    top: 8vh;
+    left: 20px;
+    width: 7vw;
+    font-size: 1vw;
+    text-align: center;
+    background-color: var(--color-yellow);
+    border-radius: 0.3vw;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.edit {
+    border: 4px solid black;
+    box-shadow: 0 0 10px white;
+}
+
+#delete [type=submit]{
+    position: absolute;
+    top: 12vh;
+    left: 20px;
+    width: 7vw;
+    font-size: 0.8vw;
+    text-align: center;
+    background-color: var(--color-yellow);
+    border-radius: 0.3vw;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    text-align: center;
+}

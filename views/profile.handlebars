@@ -1,0 +1,27 @@
+<img id="loginIMG" src="/images/noiron.png" alt="ironing forbidden">
+
+<h2>Give us some more details about you</h2>
+
+<form id="register" action="/profile" method="POST">
+    <h2 id="noinput">{{noinput}}</h2>
+    <div class="registerDiv">   
+            <div>
+                <input type="number" name="age" value="{{age}}" class="registerInput">
+                <label for="age">Age</label>
+            </div>     
+
+            <div>
+                <input type="text" name="city" value="{{city}}" class="registerInput">
+                <label for="city">City</label>
+            </div>
+
+            <div>
+                <input type="text" name="homepage" value="{{homepage}}" class="registerInput">
+                <label for="homepage">Homepage</label>
+            </div>
+
+    </div>
+
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input type="submit" value="Continue">
+</form>

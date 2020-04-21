@@ -1,0 +1,52 @@
+<h2>Edit your profile</h2>
+
+{{#if error}}
+    <h3>Please, leave no marked field empty</h3>
+{{/if}}
+
+<a id="loginLink" href="/logout">Logout</a>
+
+<form id="register" action="/profile/edit" method="POST">
+    <div class="registerDiv">   
+            <div>
+                <input type="text" name="firstname" value="{{firstname}}" class="registerInput {{#if error}}edit{{/if}}" >
+                <label for="firstname">First Name</label>
+            </div>     
+
+            <div>
+                <input type="text" name="lastname" value="{{lastname}}" class="registerInput {{#if error}}edit{{/if}}">
+                <label for="lastname">Last Name</label>
+            </div>
+
+            <div>
+                <input type="text" name="email" value="{{email}}" class="registerInput {{#if error}}edit{{/if}}">
+                <label for="email">Email</label>
+            </div>
+
+    </div>
+    <div class="registerDiv">   
+            <div>
+                <input type="password" name="password" class="registerInput">
+                <label for="password">Password</label>
+            </div>  
+    </div>
+    <div class="registerDiv">   
+            <div>
+                <input type="number" name="age" value="{{age}}" class="registerInput {{#if error}}edit{{/if}}">
+                <label for="age">Age</label>
+            </div>     
+
+            <div>
+                <input type="text" name="city" value="{{city}}" class="registerInput {{#if error}}edit{{/if}}">
+                <label for="city">City</label>
+            </div>
+
+            <div>
+                <input type="text" name="homepage" value="{{homepage}}" class="registerInput {{#if error}}edit{{/if}}">
+                <label for="homepage">Homepage</label>
+            </div>
+
+    </div>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input type="submit" value="UPDATE">
+</form>

@@ -1,0 +1,26 @@
+<h2>Thanks to all of you !</h2>
+
+<a id="loginLink" href="/logout">Logout</a>
+<a id="edit" href="/profile/edit">Edit profile</a>
+<form id="delete" action="/delete" method="POST">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input type="submit"  value="Delete account">
+</form>
+
+<div id="thanks">
+    <img id="thanksIMG" src="/images/noiron.png" alt="ironing forbidden sign">
+    <h3>Below you see all signers:</h3>
+    {{#each signers}}
+        <div id="signers">
+            <a  class="signA" href="{{homepage}}" target="_blank">{{firstname}} {{lastname}}</a>
+            {{#if age}}
+                <aside class="time">,({{age}})  
+            {{/if}}
+            {{#if city}}
+                from<a class="time" href="/signers/{{city}}">{{city}}</a></aside>
+            {{/if}}
+        </div>
+    {{/each}}
+
+    
+</div>

@@ -1,0 +1,25 @@
+<h2>We will have soon a meeting with the "Mainzelmännchen"!</h2>
+<h3>So, keep you updated!</h3>
+
+<img id="loginIMG" src="/images/noiron.png" alt="ironing forbidden">
+
+<h2>Log in to your account</h2>
+
+<form id="register" action="/login" method="POST">
+    <h2 id="noinput">{{noinput}}</h2>
+    <div class="registerDiv">   
+            <div>
+                <input type="text" name="email" id="email" value="{{email}}" class="registerInput">
+                <label for="email">Email</label>
+            </div>     
+
+            <div>
+                <input type="password" name="password" id="password" class="registerInput">
+                <label for="password">Password</label>
+            </div>
+
+    </div>
+
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input type="submit" value="Login">
+</form>

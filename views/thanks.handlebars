@@ -1,0 +1,34 @@
+<h2>THANK YOU, {{signer}} !</h2>
+
+<a id="loginLink" href="/logout">Logout</a>
+<a id="edit" href="/profile/edit">Edit profile</a>
+<form id="delete" action="/delete" method="POST">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input type="submit"  value="Delete account">
+</form> 
+
+<div id="signIMG">        
+    <form id="unsign" action="/unsign-petition" method="POST">
+        <p>With your signature we are a step closer to our goal !</p>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input type="submit"  value="Delete signature">
+    </form> 
+    {{#if signature}}
+    <img src="{{signature}}" alt="your signature">  
+    {{/if}}  
+</div>
+
+
+
+<div id="thanks">
+    <img id="thanksIMG" src="/images/noiron.png" alt="ironing forbidden sign">
+
+        <a href="/signers">See all {{number}} signers</a>
+           
+
+    <h2>We will make it happen !</h2>
+    <h3>"Mainzelmännchen, go for it! Do the ironing !"</h3>
+
+</div>
+
+

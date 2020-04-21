@@ -1,0 +1,30 @@
+
+<h2>Let the "Mainzelmännchen" iron our laundry</h2>
+<img id="mainIMG" src="./images/ironscream.jpg">
+
+<a id="loginLink" href="/logout">Logout</a>
+<a id="edit" href="/profile/edit">Edit profile</a>
+
+<h3>We pay them, so let's make them work for it</h3>
+<h3>Not just fooling around on TV</h3>
+<h3>Giving something back to society</h3>
+<h3>No more complaints about GIZ</h3>
+
+<h2>{{fillin}}</h2>
+<h2 id="nosign">{{nofillin}}</h2>
+
+<form id="signPetition" action="/sign-petition" method="POST">
+    
+    <canvas id="signature" width=400 height=50></canvas>
+    <label for="signature">Sign here</label>
+
+    <input type="hidden" name="signaturecode" id="signaturecode">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input type="submit" value="Submit">
+
+
+</form>
+
+
+
+

@@ -1,0 +1,40 @@
+<h2>Let the "Mainzelmännchen" iron our laundry</h2>
+
+<h2>Let's register and join us!</h2>
+
+<img id="mainIMG" src="./images/ironscream.jpg">
+
+<a id="loginLink" href="/login">Login</a>
+
+<form id="register" action="/register" method="POST">
+    <h2 id="noinput">{{noinput}}</h2>
+    <div class="registerDiv">   
+        <div>
+            <input type="text" name="firstname" id="firstname" value="{{firstname}}" class="registerInput">
+            <label for="firstname">First name</label>
+        </div>     
+        
+        <div>
+            <input type="text" name="lastname" id="lastname"  value="{{lastname}}" class="registerInput">
+            <label for="lastname">Last name</label>
+        </div>
+        
+    </div>
+
+    <div class="registerDiv">   
+        <div>
+            <input type="text" name="email" id="email" value="{{email}}" class="registerInput">
+            <label for="email">Email</label>
+        </div>     
+        
+        <div>
+            <input type="password" name="password" id="password" class="registerInput">
+            <label for="password">Password</label>
+        </div>
+        
+    </div>
+
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <input type="submit" value="Register">
+
+</form>
